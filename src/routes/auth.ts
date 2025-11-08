@@ -429,6 +429,7 @@ export function createAuthRouter(
       const env = getEnv();
       const mailgunClient = initMailgun({
         apiKey: env.MAILGUN_API_KEY,
+
         domain: env.MAILGUN_DOMAIN,
         fromEmail: env.MAILGUN_FROM_EMAIL,
         fromName: env.MAILGUN_FROM_NAME,
